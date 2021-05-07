@@ -28,17 +28,17 @@ namespace DataStructure_Linked_List
                 Node lastNode = GetLastNode();
                 lastNode.next = new_node;
             }
-           
+
         }
-            public Node GetLastNode()
+        public Node GetLastNode()
+        {
+            Node temp = this.head;
+            while (temp.next != null)
             {
-                Node temp = this.head;
-                while (temp.next != null)
-                {
-                    temp = temp.next;
-                }
-                return temp;
+                temp = temp.next;
             }
+            return temp;
+        }
         public void InserFront(int new_data)
         {
             //object is created for adding data in node class
@@ -46,58 +46,38 @@ namespace DataStructure_Linked_List
             //head address is added in newly created node, hence the initial head is coming at last, and data is inserted at left
             new_node.next = this.head;
             this.head = new_node;
-           // Console.WriteLine("inserted into front" + new_node);
+            // Console.WriteLine("inserted into front" + new_node);
 
         }
 
-            internal void Display()
-            {
-                Node temp = this.head;
-                if (temp == null)
-                {
-                    Console.WriteLine("Linked list is empty");
-                    return;
-                }
-                else
-                {
-                    while (temp.next != null)
-                    {
-                        Console.Write(temp.data + "\n");
-                        temp = temp.next;
-                    }
-                    Console.WriteLine(temp.data);
-                }
-            }
-        //Create Method for Insert At apaerticular position
-        internal Node InsertAtParticularPosition(int position, int data)
+      //Creating Method For Deleteing Element
+        internal Node DeleteFirstNode()
         {
-            //If the Position of Node Having Less than one Value pointer
-            if (position < 1)
-                Console.WriteLine("Invalid position");
-            if (position == 1)
+            if (this.head == null)
             {
-                var newNode = new Node(data);
-                newNode.next = this.head;
-                head = newNode;
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
+        }
+        //Creating Dispaly MEthod
+        internal void Display()
+        {
+            Node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("Linked list is empty");
+                return;
             }
             else
             {
-                while (position-- != 0)
+                while (temp.next != null)
                 {
-                    if (position == 1)
-                    {
-                        // //Creating a object of node and adding data in no                      
-                        Node node = new Node(data);
-                        node.next = this.head.next;
-                        head.next = node;
-                        break;
-                    }
-                    head = head.next;
+                    Console.Write(temp.data + "--->>");
+                    temp = temp.next;
                 }
-                if (position != 1)
-                    Console.WriteLine("Position out of range");
+                Console.WriteLine("Element Deleted--->> "+temp.data);
             }
-            return head;
         }
     }
 }

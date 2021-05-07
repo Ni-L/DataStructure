@@ -19,9 +19,10 @@ namespace DataStructure_Linked_List
             //list.InsertData(70);
             //Calling InsertFront 
             list.InserFront(70);
-            //list.InserFront(30);
+            list.InserFront(30);
             list.InserFront(56);
-            list.InsertAtParticularPosition(2, 30);
+            //list.InsertAtParticularPosition(2, 30);
+            list.DeleteFirstNode();
             list.Display();
             Console.ReadLine();
         }
