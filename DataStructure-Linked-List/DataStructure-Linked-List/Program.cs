@@ -22,7 +22,7 @@ namespace DataStructure_Linked_List
             list.InserFront(30);
             list.InserFront(56);
             //list.InsertAtParticularPosition(2, 30);
-            list.DeleteFirstNode();
+            list.DeleteLastNode();
             list.Display();
             Console.ReadLine();
         }
