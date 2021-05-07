@@ -50,7 +50,7 @@ namespace DataStructure_Linked_List
 
         }
 
-      //Creating Method For Deleteing Element
+        //Creating Method For Deleteing Element
         internal Node DeleteFirstNode()
         {
             if (this.head == null)
@@ -80,24 +80,48 @@ namespace DataStructure_Linked_List
             newNode.next = null;
             return newNode;
         }
-        //Creating Dispaly MEthod
-        internal void Display()
+        //Adding Searching Method
+        public bool Search(int input)
         {
-            Node temp = this.head;
-            if (temp == null)
-            {
-                Console.WriteLine("Linked list is empty");
-                return;
-            }
+            bool flag = false;
+            if (head == null)
+                Console.WriteLine("List is Empty");
             else
             {
-                while (temp.next != null)
+                Node temp = head;
+                while (temp != null)
                 {
-                    Console.Write(temp.data + "--->>");
+                    if (temp.data == input)
+                    {
+                        Console.WriteLine("The element is present");
+                        flag = true;
+                        break;
+                    }
                     temp = temp.next;
                 }
-                Console.WriteLine("Element Deleted--->> "+temp.data);
+                if (!flag)
+                    Console.WriteLine("The Element is Absent");
             }
+            return flag;
         }
+            //Creating Dispaly MEthod
+            internal void Display()
+            {
+                Node temp = this.head;
+                if (temp == null)
+                {
+                    Console.WriteLine("Linked list is empty");
+                    return;
+                }
+                else
+                {
+                    while (temp.next != null)
+                    {
+                        Console.Write(temp.data + "--->>");
+                        temp = temp.next;
+                    }
+                    Console.WriteLine( temp.data);
+                }
+            }
     }
 }
