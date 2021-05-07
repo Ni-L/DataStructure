@@ -1,0 +1,7 @@
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\DataStructure-Linked-List\bin\Debug\DataStructure-Linked-List.exe.config
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\DataStructure-Linked-List\bin\Debug\DataStructure-Linked-List.exe
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\DataStructure-Linked-List\bin\Debug\DataStructure-Linked-List.pdb
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\DataStructure-Linked-List\obj\Debug\DataStructure-Linked-List.csprojAssemblyReference.cache
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\DataStructure-Linked-List\obj\Debug\DataStructure-Linked-List.csproj.CoreCompileInputs.cache
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\DataStructure-Linked-List\obj\Debug\DataStructure-Linked-List.exe
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\DataStructure-Linked-List\obj\Debug\DataStructure-Linked-List.pdb

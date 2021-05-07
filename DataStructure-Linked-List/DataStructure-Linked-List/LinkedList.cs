@@ -28,7 +28,7 @@ namespace DataStructure_Linked_List
                 Node lastNode = GetLastNode();
                 lastNode.next = new_node;
             }
-            Console.WriteLine("inserted into list" + new_node.data);
+           
         }
             public Node GetLastNode()
             {
@@ -39,6 +39,16 @@ namespace DataStructure_Linked_List
                 }
                 return temp;
             }
+        public void InserFront(int new_data)
+        {
+            //object is created for adding data in node class
+            Node new_node = new Node(new_data);
+            //head address is added in newly created node, hence the initial head is coming at last, and data is inserted at left
+            new_node.next = this.head;
+            this.head = new_node;
+           // Console.WriteLine("inserted into front" + new_node);
+
+        }
 
             internal void Display()
             {
@@ -52,11 +62,42 @@ namespace DataStructure_Linked_List
                 {
                     while (temp.next != null)
                     {
-                        Console.Write(temp.data + "->");
+                        Console.Write(temp.data + "\n");
                         temp = temp.next;
                     }
                     Console.WriteLine(temp.data);
                 }
             }
+        //Create Method for Insert At apaerticular position
+        internal Node InsertAtParticularPosition(int position, int data)
+        {
+            //If the Position of Node Having Less than one Value pointer
+            if (position < 1)
+                Console.WriteLine("Invalid position");
+            if (position == 1)
+            {
+                var newNode = new Node(data);
+                newNode.next = this.head;
+                head = newNode;
+            }
+            else
+            {
+                while (position-- != 0)
+                {
+                    if (position == 1)
+                    {
+                        // //Creating a object of node and adding data in no                      
+                        Node node = new Node(data);
+                        node.next = this.head.next;
+                        head.next = node;
+                        break;
+                    }
+                    head = head.next;
+                }
+                if (position != 1)
+                    Console.WriteLine("Position out of range");
+            }
+            return head;
+        }
     }
 }
