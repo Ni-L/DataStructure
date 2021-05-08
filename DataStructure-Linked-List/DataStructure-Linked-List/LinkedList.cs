@@ -130,8 +130,59 @@ namespace DataStructure_Linked_List
             }
             return flag;
         }
-            //Creating Dispaly Method
-            internal void Display()
+        //Adding Delete Method Delete 
+        public bool DeleteAnyData(int data)     //delete data
+        {
+            bool flag = false;
+            int count = 0;
+
+            if (head == null)
+                Console.WriteLine("List is Empty");
+            else
+            {
+                Node temp = head;
+                Node previousNode = null;
+                while (temp != null)
+                {
+                    count++;
+                    if (temp.data == data)
+                    {
+                        if (count == 1)
+                        {
+                            head = temp.next;
+                        }
+                        else
+                        {
+                            previousNode.next = temp.next;
+                        }
+                        flag = true;
+                        break;
+                    }
+                    previousNode = temp;
+                    temp = temp.next;
+                }
+                if (!flag)
+                    Console.WriteLine("The Element is Absent");
+            }
+            return flag;
+        }
+        //Adding Method Size
+        public int Size()   //specify size
+        {
+            int count = 0;
+
+            Node temp = head;
+            while (temp != null)
+            {
+                temp = temp.next;
+                count++;
+            }
+
+            return count;
+        }
+
+        //Creating Dispaly Method
+        internal void Display()
             {
                 Node temp = this.head;
                 if (temp == null)

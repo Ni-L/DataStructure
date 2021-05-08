@@ -22,9 +22,10 @@ namespace DataStructure_Linked_List
             list.InserFront(30);
             list.InserFront(56);
             //list.InsertAtParticularPosition(2, 30);
-            Console.WriteLine("\nAdd after 30 : 40");
-            list.InsertAfter(3 ,40);
+            //Console.WriteLine("\nAdd after 30 : 40");
+            // list.InsertAfter(3 ,40);
             //list.Search(30);
+            list.DeleteAnyData(30);
             list.Display();
             Console.ReadLine();
         }
