@@ -130,6 +130,21 @@ namespace DataStructure_Linked_List
             }
             return flag;
         }
+        //Adding Method Count 
+        public int Count()
+        {
+            int count = 0;
+
+            Node temp = head;
+            while (temp != null)
+            {
+                temp = temp.next;
+                count++;
+            }
+            Console.WriteLine($"Linked List Count is {count}");
+            return count;
+        }
+
         //Adding Delete Method Delete 
         public bool DeleteAnyData(int data)     //delete data
         {
@@ -180,6 +195,67 @@ namespace DataStructure_Linked_List
 
             return count;
         }
+        //for sorting
+        public Node LinkedListSorted(Node head)
+        {
+            if (head == null || head.next == null)
+            {
+                return head;
+            }
+            Node temp = head;
+            Node slow = head;
+            Node fast = head;
+            while (fast != null && fast.next != null)
+            {
+                temp = slow;
+                slow = slow.next;
+                fast = fast.next.next;
+
+            }
+            temp.next = null;
+            Node leftside = LinkedListSorted(head);
+            Node rightside = LinkedListSorted(slow);
+            return Merge(leftside, rightside);
+        }
+        //for merging
+        public Node Merge(Node l1, Node l2)
+        {
+            Node sorted_temp = new Node();
+            Node current_node = sorted_temp;
+
+            while (l1 != null && l2 != null)
+            {
+                if (l1.data < l2.data)
+                {
+                    current_node.next = l1;
+
+                    l1 = l1.next;
+                }
+                else
+                {
+                    current_node.next = l2;
+
+                    l2 = l2.next;
+                }
+                current_node = current_node.next;
+            }
+
+            if (l1 != null)
+            {
+                current_node.next = l1;
+                l1 = l1.next;
+            }
+
+            if (l2 != null)
+            {
+                current_node.next = l2;
+                l2 = l2.next;
+            }
+
+            return sorted_temp.next;
+
+        }
+
 
         //Creating Dispaly Method
         internal void Display()
@@ -199,6 +275,6 @@ namespace DataStructure_Linked_List
                     }
                     Console.WriteLine( temp.data);
                 }
-            }
+        }
     }
 }
