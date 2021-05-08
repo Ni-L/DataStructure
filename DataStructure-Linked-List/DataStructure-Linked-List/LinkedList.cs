@@ -8,7 +8,7 @@ namespace DataStructure_Linked_List
 {/// <summary>
 /// Creating Linked List for Adding Elements 
 /// </summary>
-    class LinkedList
+   class LinkedList
     {
         //Creating a node Equals to head, which will be pointing to the first element in linkedlist
         public Node head;
@@ -104,7 +104,33 @@ namespace DataStructure_Linked_List
             }
             return flag;
         }
-            //Creating Dispaly MEthod
+        //Adding InsertAfter Method
+        public bool InsertAfter(int data, int after)
+        {
+            bool flag = false;
+            if (head == null)
+                Console.WriteLine("List is Empty");
+            else
+            {
+                Node temp = head;
+                while (temp != null)
+                {
+                    if (temp.data == after)
+                    {
+                        Node newNode = new Node(data);
+                        newNode.next = temp.next;
+                        temp.next = newNode;
+                        flag = true;
+                        break;
+                    }
+                    temp = temp.next;
+                }
+                if (!flag)
+                    Console.WriteLine("The Element is Absent");
+            }
+            return flag;
+        }
+            //Creating Dispaly Method
             internal void Display()
             {
                 Node temp = this.head;
@@ -117,7 +143,7 @@ namespace DataStructure_Linked_List
                 {
                     while (temp.next != null)
                     {
-                        Console.Write(temp.data + "--->>");
+                        Console.Write(temp.data + "-->>");
                         temp = temp.next;
                     }
                     Console.WriteLine( temp.data);

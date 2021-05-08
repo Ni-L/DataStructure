@@ -14,15 +14,17 @@ namespace DataStructure_Linked_List
         {
             Console.WriteLine("**********WELCOME TO LINKED LIST********");
             LinkedList list = new LinkedList();
-            list.InsertData(56);
-             list.InsertData(30);
-            list.InsertData(70);
+            //list.InsertData(56);
+             //list.InsertData(30);
+           // list.InsertData(70);
             //Calling InsertFront 
-            //list.InserFront(70);
-            //list.InserFront(30);
-            //list.InserFront(56);
+            list.InserFront(70);
+            list.InserFront(30);
+            list.InserFront(56);
             //list.InsertAtParticularPosition(2, 30);
-            list.Search(30);
+            Console.WriteLine("\nAdd after 30 : 40");
+            list.InsertAfter(3 ,40);
+            //list.Search(30);
             list.Display();
             Console.ReadLine();
         }
