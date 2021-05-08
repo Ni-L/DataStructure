@@ -1,0 +1,17 @@
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\MSTestDataStructure.dll
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\MSTestDataStructure.pdb
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\DataStructure-Linked-List.exe
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\DataStructure-Linked-List.pdb
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\DataStructure-Linked-List.exe.config
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\obj\Debug\MSTestDataStructure.csprojAssemblyReference.cache
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\obj\Debug\MSTestDataStructure.csproj.CoreCompileInputs.cache
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\obj\Debug\MSTestDataStructure.csproj.CopyComplete
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\obj\Debug\MSTestDataStructure.dll
+C:\Users\Aishwarya\source\repos\DataStructure\DataStructure-Linked-List\MSTestDataStructure\obj\Debug\MSTestDataStructure.pdb
